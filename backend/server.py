@@ -259,7 +259,7 @@ async def create_mfo(data: MFOCreate, admin: dict = Depends(get_current_admin)):
         "created_at": datetime.now(timezone.utc).isoformat()
     }
     await db.mfos.insert_one(mfo_doc)
-    del mfo_doc["_id"] if "_id" in mfo_doc else None
+    mfo_doc.pop("_id", None)
     return mfo_doc
 
 @api_router.put("/mfos/{mfo_id}", response_model=MFOResponse)
