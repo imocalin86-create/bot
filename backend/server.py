@@ -356,7 +356,7 @@ async def create_content(data: ContentCreate, admin: dict = Depends(get_current_
         "updated_at": datetime.now(timezone.utc).isoformat()
     }
     await db.content.insert_one(content_doc)
-    del content_doc["_id"] if "_id" in content_doc else None
+    content_doc.pop("_id", None)
     return content_doc
 
 @api_router.put("/content/{content_id}", response_model=ContentResponse)
