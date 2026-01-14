@@ -316,7 +316,7 @@ async def create_application(data: LoanApplicationCreate):
         "created_at": datetime.now(timezone.utc).isoformat()
     }
     await db.applications.insert_one(app_doc)
-    del app_doc["_id"] if "_id" in app_doc else None
+    app_doc.pop("_id", None)
     return app_doc
 
 @api_router.put("/applications/{app_id}/status")
