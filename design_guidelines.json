@@ -1,0 +1,177 @@
+{
+  "identity": {
+    "persona": "E1: The Anti-AI Designer",
+    "mission": "Create a high-density, trust-inducing financial admin panel that breaks the 'boring admin' stereotype while maintaining extreme functional clarity.",
+    "principles": [
+      "Fusion over Imitation: Mix Swiss precision with Cyberpunk data density.",
+      "Emotion First: Every pixel must convey 'Control' and 'Accuracy'.",
+      "Content is King: Data is the hero. Charts and numbers take precedence over decoration.",
+      "Zoom In: Focus on the micro-details of financial metrics.",
+      "Negative Space: Use it to separate dense data clusters."
+    ]
+  },
+  "design_context": {
+    "app_type": "Dashboard / Admin Panel",
+    "theme_strategy": "Dark Mode First (The Performance Pro)",
+    "emotional_tone": "Authoritative, Precise, Secure, High-Speed",
+    "target_audience": "Financial Admins, Bot Owners"
+  },
+  "typography": {
+    "strategy": "The Soft Utility",
+    "headings": {
+      "family": "Manrope",
+      "weights": ["600", "700", "800"],
+      "usage": "Use for all page titles, card headers, and metric values. Tight tracking (-0.02em)."
+    },
+    "body": {
+      "family": "IBM Plex Sans",
+      "weights": ["400", "500"],
+      "usage": "Use for tables, labels, inputs, and general text. Excellent legibility for numbers."
+    },
+    "mono": {
+      "family": "JetBrains Mono",
+      "usage": "Use strictly for Transaction IDs, API keys, and raw data logs."
+    },
+    "installation": "Import from Google Fonts in index.css: @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap');"
+  },
+  "colors": {
+    "palette_name": "Obsidian Ledger",
+    "backgrounds": {
+      "app_bg": "#050505",
+      "card_bg": "#0A0A0A",
+      "sidebar_bg": "#000000",
+      "input_bg": "#121212"
+    },
+    "primary": {
+      "main": "#3B82F6",
+      "hover": "#2563EB",
+      "foreground": "#FFFFFF",
+      "description": "Electric Blue for primary actions and active states. Represents technology and speed."
+    },
+    "accents": {
+      "success": "#10B981",
+      "success_dim": "rgba(16, 185, 129, 0.1)",
+      "warning": "#F59E0B",
+      "warning_dim": "rgba(245, 158, 11, 0.1)",
+      "danger": "#EF4444",
+      "danger_dim": "rgba(239, 68, 68, 0.1)",
+      "neutral": "#71717A"
+    },
+    "borders": {
+      "subtle": "#27272A",
+      "active": "#3F3F46"
+    },
+    "forbidden_colors": ["#1B93A4", "#7351B7"]
+  },
+  "layout_strategy": {
+    "grid_system": "Bento Grid Mode B (High Density)",
+    "spacing": "Compact but breathable. Use p-6 for cards, gap-4 for grids.",
+    "container_style": "Grid Borders",
+    "rules": [
+      "Mobile-First: grid-cols-1 -> md:grid-cols-3 -> lg:grid-cols-4",
+      "Full Height: Children must use h-full to stretch.",
+      "No Jagged Bottoms: Align grid items to form a solid block."
+    ]
+  },
+  "component_styles": {
+    "cards": {
+      "style": "Flat, 1px border (border-white/10), no shadow in dark mode.",
+      "hover": "border-primary/50 transition-colors duration-300"
+    },
+    "buttons": {
+      "primary": "bg-primary text-white rounded-md font-medium hover:bg-primary/90 shadow-[0_0_15px_rgba(59,130,246,0.4)]",
+      "secondary": "bg-white/5 text-white border border-white/10 hover:bg-white/10",
+      "ghost": "hover:bg-white/5 text-gray-400 hover:text-white"
+    },
+    "inputs": {
+      "style": "bg-input_bg border-white/10 focus:border-primary focus:ring-1 focus:ring-primary rounded-md h-10"
+    },
+    "tables": {
+      "style": "Compact density. Header text-xs uppercase tracking-wider text-gray-500. Row hover: bg-white/5."
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Subtle noise overlay on the sidebar to reduce digital flatness.",
+    "micro_interactions": "Buttons scale down (0.98) on click. Links have a sliding underline.",
+    "glassmorphism": "Use only for sticky headers/overlays: bg-black/60 backdrop-blur-xl border-b border-white/5."
+  },
+  "image_assets": {
+    "mfo_logos": [
+      {
+        "url": "https://images.unsplash.com/photo-1762939079730-23708c0dd337?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "MFO Partner Logo 1",
+        "category": "mfo_logo"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1628760584600-6c31148991e9?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "MFO Partner Logo 2",
+        "category": "mfo_logo"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1698210806453-5ec74b8e08be?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "MFO Partner Logo 3",
+        "category": "mfo_logo"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1750049790142-2db418e5745c?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "MFO Partner Logo 4",
+        "category": "mfo_logo"
+      }
+    ],
+    "user_avatars": [
+      {
+        "url": "https://images.unsplash.com/photo-1615843423179-bea071facf96?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Admin User Avatar",
+        "category": "avatar"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1648293821367-b39c09679658?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "User Avatar 2",
+        "category": "avatar"
+      },
+      {
+        "url": "https://images.pexels.com/photos/5511644/pexels-photo-5511644.jpeg",
+        "alt": "User Avatar 3",
+        "category": "avatar"
+      }
+    ]
+  },
+  "instructions_to_main_agent": {
+    "setup": [
+      "Install dependencies: yarn add lucide-react recharts framer-motion clsx tailwind-merge",
+      "Configure Tailwind colors in tailwind.config.js to match the 'Obsidian Ledger' palette.",
+      "Add the Google Fonts import to index.css."
+    ],
+    "implementation_order": [
+      "1. Setup Layout (Sidebar + Header + Main Content Area).",
+      "2. Build Dashboard (Stats Cards + Main Chart).",
+      "3. Build MFO Management (Data Table with Actions).",
+      "4. Build Loans Management (Form + List).",
+      "5. Build Applications View (Kanban or List).",
+      "6. Build Analytics (Charts)."
+    ],
+    "critical_rules": [
+      "DO NOT use gradients for backgrounds. Use solid dark colors.",
+      "Ensure all text has sufficient contrast (WCAG AA).",
+      "Use 'lucide-react' for all icons.",
+      "Use 'recharts' for all charts. Style them to match the dark theme (no white backgrounds).",
+      "Add 'data-testid' to all interactive elements."
+    ]
+  },
+  "universal_guidelines": {
+    "general": [
+      "Avoid 'AI slop' aesthetic (generic centered layouts, uniform styling).",
+      "Create depth through z-index hierarchy and subtle borders.",
+      "NO universal transitions (transition: all). Animate specific properties.",
+      "NO text-align: center on the main app container.",
+      "Use pill-shaped or sharp buttons, never default browser styles.",
+      "NEVER use emojis for icons. Use Lucide React."
+    ],
+    "components": [
+      "Prioritize Shadcn UI components.",
+      "Customize Shadcn components to remove the 'Vercel default' look.",
+      "Use named exports for components, default exports for pages."
+    ],
+    "toasts": "Use 'sonner' for notifications."
+  }
+}
